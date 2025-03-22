@@ -15,12 +15,14 @@ class Buss:
         self.passengers.append(human)
 
     def v(self):
-        print(self.passengers)
+        for i in self.passengers:
+            print(i.name)
 
-obj = Human('Danylo')
+obj1 = Human('Danylo')
+obj2 = Human('Rozum')
 buss1 = Buss()
-buss1.addpassengers(obj)
+buss1.addpassengers(obj1)
 buss1.v()
 buss1 = Buss()
-buss1.addpassengers(obj)
+buss1.addpassengers(obj2)
 buss1.v()
