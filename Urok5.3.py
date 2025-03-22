@@ -19,10 +19,10 @@ class Order:
         self.items.append(menu_item)
 
     def get_total(self):
-        total = 0
+        all = 0
         for item in self.items:
-            total += item.price
-        return total
+            all += item.price
+        return all
 
     def show_order(self):
         print(f"Клієнт: {self.customer.name}, Телефон: {self.customer.phone}")
