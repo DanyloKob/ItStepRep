@@ -13,17 +13,18 @@ class Library:
 
     def v(self):
         for i in self.books:
-            print(i.title)
+            print(i.title, i.author)
 
     def removeBook(self, b: Book):
         self.books.remove(b)
 
 
-obj1 = Book('Book1')
-obj2 = Book('Book2')
+obj1 = Book("Кобзар", "Тарас Шевченко")
+obj2 = Book("Кобзар 2", "Тарас Шевченко")
 library1 = Library()
 library1.addBook(obj1)
 library1.v()
-library1 = Library()
 library1.addBook(obj2)
+library1.v()
+library1.removeBook(obj1)
 library1.v()
