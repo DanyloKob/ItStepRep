@@ -20,7 +20,7 @@ class FoodProduct(Product):
         self.expiration_date = expiration_date
 
     def get_info(self):
-        print(f"Товар: {self.name}, Ціна: {self.price:.2f} грн, Термін придатності до: {self.expiration_date}")
+        print(f"Товар: {self.name}, Ціна: {self.price} грн, Термін придатності до: {self.expiration_date}")
 
     def new_expiration_date(self, newED):
         self.expiration_date = newED
@@ -32,7 +32,7 @@ class Tehnic(Product):
         self.warranty_years = warranty_years
 
     def get_info(self):
-        print(f"Товар: {self.name}, Ціна: {self.price:.2f} грн, Гарантія: {self.warranty_years} роки")
+        print(f"Товар: {self.name}, Ціна: {self.price} грн, Гарантія: {self.warranty_years} роки")
 
 class Cart:
     def __init__(self):
